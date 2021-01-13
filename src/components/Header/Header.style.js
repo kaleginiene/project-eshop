@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Header = styled.header`
-  padding: 1em;
-  border-bottom: 2px solid ${(props) => props.theme.primary.background};
+  border-bottom: ${(props) => props.theme.primary.border};
   margin-bottom: 1em;
+  padding: 0.5em 1em;
 `;
 export const Wrapper = styled.div`
-  width: 56em;
+  width: 83em;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,20 +15,23 @@ export const Wrapper = styled.div`
 `;
 
 export const Logo = styled.img`
-  max-height: 40px;
-  max-width: 100%;
+  max-height: 5em;
+  width: 10em;
 `;
 
 export const Actions = styled.nav``;
 
-export const StyledLink = styled(Link)`
-  font-size: 0.9em;
-  color: #222;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:not(:last-child) {
-    margin-right: 15px;
+export const Cart = styled.div`
+  min-height: 2.5em;
+  border: 1px solid #a9a9a9;
+  border-radius: 1.5em;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  img {
+    width: 1.5em;
+    margin-right: 0.5em;
   }
 `;
