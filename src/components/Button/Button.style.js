@@ -8,7 +8,7 @@ export const Button = styled.button`
   color: ${(props) => (props.color === "primary" ? "#fff" : "#222")};
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 1.5em;
   padding: 0.5em 2em;
   cursor: pointer;
   &:hover {
