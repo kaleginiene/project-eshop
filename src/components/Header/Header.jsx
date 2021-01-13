@@ -1,13 +1,10 @@
-import React, { useContext } from "react";
-import { CartContext } from "../../contexts/cart.context";
+import React from "react";
 import * as S from "./Header.style";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/logo.png";
 import CartIcon from "../../assets/icons/shopping-cart.svg";
 
-function Header() {
-  const cart = useContext(CartContext);
-
+function Header({ cart }) {
   return (
     <S.Header>
       <S.Wrapper>
@@ -16,7 +13,7 @@ function Header() {
         </Link>
         <S.Cart>
           <img src={CartIcon} alt="Shopping Cart" /> &euro;
-          {cart.items[0].price.toFixed(2)}
+          {cart.toFixed(2)}
         </S.Cart>
       </S.Wrapper>
     </S.Header>

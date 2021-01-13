@@ -7,6 +7,7 @@ const theme = {
     focus: {
       background: "#111111",
     },
+    border: "1px solid #eaeaeb",
   },
   secondary: {
     background: "#eeeeee",

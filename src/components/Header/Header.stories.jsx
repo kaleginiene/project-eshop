@@ -9,6 +9,6 @@ storiesOf("Header", module)
   .addDecorator(StoryRouter())
   .add("Header", () => (
     <ThemeProvider theme={theme}>
-      <Header />
+      <Header cart={0} />
     </ThemeProvider>
   ));
