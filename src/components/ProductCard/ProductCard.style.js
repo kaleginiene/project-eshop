@@ -1,22 +1,17 @@
 import styled from "styled-components";
 
 export const Block = styled.div`
-  margin: 1em;
+  margin: 0.5em;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(25% - 1.5em);
+  width: calc(25% - 0.9em);
   height: 25em;
   border: ${(props) => props.theme.primary.border};
   box-sizing: border-box;
   text-align: center;
-  &:nth-child(4n) {
-    margin-right: 0;
-    @media only screen and (max-width: 768px) {
-      margin-right: 0.5em;
-    }
-  }
+  background-color: #fff;
   &:nth-child(5) {
     margin-left: 0;
     @media only screen and (max-width: 768px) {
@@ -54,22 +49,25 @@ export const FlexBlock = styled.div`
 `;
 
 export const Icon = styled.img`
-  margin: 0 0.5em 1em 0;
+  margin: 0 0.5em 0.5em 0;
   :last-child {
     margin-right: 0;
   }
-  width: 2em;
+  width: 1.5em;
 `;
 
 export const Image = styled.img`
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   width: 100%;
-  height: 10em;
+  height: 8em;
   object-fit: contain;
+`;
+export const Title = styled.div`
+  margin-top: 0.5em;
 `;
 
 export const Price = styled.div`
-  margin: 1em 0;
+  margin: 0.5em 0;
   color: ${(props) => props.theme.primary.background};
   font-weight: bold;
   font-size: 1.5em;

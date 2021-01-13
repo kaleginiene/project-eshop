@@ -20,7 +20,7 @@ function ProductCard({ products }) {
               />
             </S.FlexBlock>
             <S.Image src={product.image} alt={product.title} />
-            {product.title}
+            <S.Title>{product.title}</S.Title>
             <S.Price>&euro;{product.price}</S.Price>
             <Button color="primary">Į krepšelį</Button>
           </S.Block>

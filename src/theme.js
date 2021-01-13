@@ -10,13 +10,7 @@ const theme = {
     border: "1px solid #eaeaeb",
   },
   secondary: {
-    background: "#eeeeee",
-    hover: {
-      background: "e8e8e8",
-    },
-    focus: {
-      background: "e3e3e3",
-    },
+    background: "#F6F6F8",
   },
 };
 

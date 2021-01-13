@@ -4,6 +4,7 @@ export const Header = styled.header`
   border-bottom: ${(props) => props.theme.primary.border};
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  background-color: #fff;
 `;
 export const Wrapper = styled.div`
   width: 83em;

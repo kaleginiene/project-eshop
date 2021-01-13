@@ -9,7 +9,7 @@ import "normalize.css";
 const GlobalBodyStyle = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
-
+    background-color: #f8f4f1;
   }
 `;
 

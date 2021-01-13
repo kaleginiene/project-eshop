@@ -9,6 +9,7 @@ function Home() {
       <S.FlexBlock>
         <ProductCard products={products} />
       </S.FlexBlock>
+      <S.CartBlock>Krepšelis</S.CartBlock>
     </S.Main>
   );
 }
