@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Block = styled.div`
-  margin: 0.5em;
+  margin: 0em 0.5em 0.5em 0.5em;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: calc(25% - 0.9em);
-  height: 25em;
+  height: 28em;
   border: ${(props) => props.theme.primary.border};
   box-sizing: border-box;
   text-align: center;
@@ -35,6 +35,9 @@ export const Block = styled.div`
     min-height: 2em;
     width: calc(100% - 1em);
     margin: 0 auto;
+    :hover {
+      background-color: #c21b25;
+    }
   }
   @media only screen and (max-width: 769px) {
     width: calc(100% - 1em);
@@ -72,3 +75,5 @@ export const Price = styled.div`
   font-weight: bold;
   font-size: 1.5em;
 `;
+
+export const ButtonWrapper = styled.div``;
