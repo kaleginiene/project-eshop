@@ -13,7 +13,7 @@ export const Main = styled.main`
 
 export const FlexBlock = styled.section`
   display: flex;
-  width: 80%;
+  width: 75%;
   flex-wrap: wrap;
   @media only screen and (max-width: 769px) {
     display: block;
@@ -23,9 +23,11 @@ export const FlexBlock = styled.section`
 
 export const CartBlock = styled.section`
   margin: 0.5em 0 0.5em 0.5em;
-  padding: 1em 0.5em;
-  width: calc(20% - 0.5em);
+  padding: 0.5em;
+  padding-top: 1em;
+  width: calc(25% - 0.5em);
   max-width: 100%;
+  position: relative;
   background-color: ${(props) => props.theme.secondary.background};
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
