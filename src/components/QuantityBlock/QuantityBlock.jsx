@@ -41,7 +41,6 @@ function removeItem(cartProducts, productID) {
 function QuantityBlock({ productID }) {
   const [quantity, setQuantity] = useState(1);
   const cartProducts = useContext(CartContext);
-  console.log(cartProducts.items);
 
   return (
     <S.QuantityWrapper>
