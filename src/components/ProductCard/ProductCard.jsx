@@ -24,7 +24,11 @@ function ProductCard({ products }) {
           <S.Block key={product.id}>
             <S.FlexBlock>
               {product.glutenFree && (
-                <S.Icon src={GlutenFree} alt="Produktas be gliuteno" />
+                <S.Icon
+                  src={GlutenFree}
+                  alt="Produktas be gliuteno"
+                  className="gluten-free"
+                />
               )}
               <S.Icon
                 src={HeartIcon}

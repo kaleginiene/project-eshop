@@ -7,28 +7,39 @@ export const Block = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: calc(25% - 0.9em);
-  height: 28em;
+  height: 24em;
   border: ${(props) => props.theme.primary.border};
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;
   &:nth-child(5) {
     margin-left: 0;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      margin: 0.5em;
     }
   }
   &:nth-child(4n + 1) {
     margin-left: 0;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      margin: 0.5em;
     }
   }
 
   &:first-child {
     margin-left: 0;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
+      margin-top: 6em;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      margin: 0.5em;
+      margin-top: 6em;
     }
   }
   button {
@@ -39,9 +50,23 @@ export const Block = styled.div`
       background-color: #c21b25;
     }
   }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 767px) {
     width: calc(100% - 1em);
-    margin: 1em 0.5em;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.2em;
+    height: 12em;
+    margin: 0 0.5em;
+    position: relative;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: calc(50% - 1em);
+    margin: 0.5em;
+    height: 20em;
+    :nth-child(2) {
+      margin-top: 6em;
+    }
   }
 `;
 
@@ -57,6 +82,15 @@ export const Icon = styled.img`
     margin-right: 0;
   }
   width: 1.5em;
+  @media only screen and (max-width: 767px) {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    &.gluten-free {
+      left: 35%;
+      top: 50%;
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -64,9 +98,18 @@ export const Image = styled.img`
   width: 100%;
   height: 8em;
   object-fit: contain;
+  @media only screen and (max-width: 767px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 767px) {
+    height: 5em;
+  }
 `;
 export const Title = styled.div`
   margin-top: 0.5em;
+  @media only screen and (max-width: 767px) {
+    width: 60%;
+  }
 `;
 
 export const Price = styled.div`
@@ -74,6 +117,13 @@ export const Price = styled.div`
   color: ${(props) => props.theme.primary.background};
   font-weight: bold;
   font-size: 1.5em;
+  @media only screen and (max-width: 767px) {
+    width: 40%;
+  }
 `;
 
-export const ButtonWrapper = styled.div``;
+export const ButtonWrapper = styled.div`
+  @media only screen and (max-width: 767px) {
+    width: 60%;
+  }
+`;
