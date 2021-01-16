@@ -24,6 +24,7 @@ export const Icon = styled.img`
   position: absolute;
   top: 0.25em;
   right: 0.25em;
+  cursor: pointer;
 `;
 
 export const Block = styled.div`
