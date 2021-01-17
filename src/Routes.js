@@ -18,14 +18,14 @@ function priceSum(cart) {
 }
 
 function Routes() {
-  const cart = useContext(CartContext);
+  const cartProducts = useContext(CartContext);
   const showCartList = useContext(DisplayContext);
 
   return (
     <Router>
       <Header
-        cart={priceSum(cart)}
-        quantity={cart.items.length}
+        cart={priceSum(cartProducts)}
+        quantity={cartProducts.items.length}
         handleClick={() => {
           showCartList.setState(!showCartList.state);
         }}

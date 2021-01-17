@@ -37,13 +37,14 @@ function Home() {
               Kaina <span>&euro; {priceSum(cartProducts).toFixed(2)}</span>
             </S.Price>
           </S.Block>
-          <Button
-            color="primary"
-            handleClick={() => showCartList.setState(!showCartList.state)}
-            className="back"
-          >
-            Atgal
-          </Button>
+          <S.Wrapper className="back-btn">
+            <Button
+              color="primary"
+              handleClick={() => showCartList.setState(!showCartList.state)}
+            >
+              Atgal
+            </Button>
+          </S.Wrapper>
         </S.Wrapper>
       </S.CartBlock>
     </S.Main>

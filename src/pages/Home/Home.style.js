@@ -19,7 +19,7 @@ export const FlexBlock = styled.section`
   display: flex;
   width: 75%;
   flex-wrap: wrap;
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 767px) {
     display: ${(props) => (props.display === "false" ? "block" : "none")};
     width: 100%;
   }
@@ -61,6 +61,13 @@ export const CartBlock = styled.section`
 export const Wrapper = styled.div`
   padding: 0.5em;
   max-width: 100%;
+  .back-btn {
+    Button {
+      @media only screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
 `;
 
 export const Block = styled.div`
@@ -76,10 +83,6 @@ export const Block = styled.div`
     margin-right: 1em;
     border-radius: 0.5em;
     width: calc(80% - 1em);
-    display: none;
-    @media only screen and (max-width: 1024px) {
-      display: block;
-    }
   }
   @media only screen and (max-width: 1024px) {
     width: 100%;
