@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## This is a simple E-shop project template where:
+## This is a simple E-shop project template which was created for demo purposes. In this project:
 
 :purse: you are able to add a product into your cart;<br />
 :heavy_plus_sign: change quantity of the products in your cart;<br />
