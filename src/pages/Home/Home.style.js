@@ -38,6 +38,7 @@ export const CartBlock = styled.section`
   padding-top: 1em;
   width: calc(25% - 0.5em);
   max-width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
