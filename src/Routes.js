@@ -24,7 +24,7 @@ function Routes() {
   return (
     <Router>
       <Header
-        cart={priceSum(cartProducts)}
+        cart={cartProducts.items.length > 0 ? priceSum(cartProducts) : 0}
         quantity={cartProducts.items.length}
         handleClick={() => {
           showCartList.setState(!showCartList.state);
