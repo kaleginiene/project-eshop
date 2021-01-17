@@ -5,7 +5,7 @@ export const FlexBlock = styled.div`
   margin: 0.5em 0;
   padding: 1em 0.5em;
   width: 100%;
-  height: 6.5em;
+  height: 7em;
   display: flex;
   align-items: center;
   position: relative;

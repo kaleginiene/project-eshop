@@ -43,35 +43,42 @@ function QuantityBlock({ productID }) {
   const cartProducts = useContext(CartContext);
 
   return (
-    <S.QuantityWrapper>
-      <Button
-        handleClick={() => {
-          if (quantity === 1) {
-            removeItem(cartProducts, productID);
-          } else {
-            setQuantity(quantity - 1);
+    <S.Container>
+      <S.Subtitle>
+        Krepšelyje <span>{quantity} vnt.</span>
+      </S.Subtitle>
+      <S.QuantityWrapper>
+        <Button
+          handleClick={() => {
+            if (quantity === 1) {
+              removeItem(cartProducts, productID);
+            } else {
+              setQuantity(quantity - 1);
+              cartProducts.setItems(
+                filterCartDecrease(cartProducts, productID, quantity)
+              );
+            }
+          }}
+        >
+          -
+        </Button>
+        <S.QuantityBlock>
+          {quantity < 0
+            ? setQuantity(0)
+            : filterQuantity(cartProducts, productID)}
+        </S.QuantityBlock>
+        <Button
+          handleClick={() => {
+            setQuantity(quantity + 1);
             cartProducts.setItems(
-              filterCartDecrease(cartProducts, productID, quantity)
+              filterCart(cartProducts, productID, quantity)
             );
-          }
-        }}
-      >
-        -
-      </Button>
-      <S.QuantityBlock>
-        {quantity < 0
-          ? setQuantity(0)
-          : filterQuantity(cartProducts, productID)}
-      </S.QuantityBlock>
-      <Button
-        handleClick={() => {
-          setQuantity(quantity + 1);
-          cartProducts.setItems(filterCart(cartProducts, productID, quantity));
-        }}
-      >
-        +
-      </Button>
-    </S.QuantityWrapper>
+          }}
+        >
+          +
+        </Button>
+      </S.QuantityWrapper>
+    </S.Container>
   );
 }
 

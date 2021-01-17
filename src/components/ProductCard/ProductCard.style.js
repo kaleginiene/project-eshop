@@ -96,7 +96,7 @@ export const Icon = styled.img`
 export const Image = styled.img`
   margin-bottom: 0.5em;
   width: 100%;
-  height: 8em;
+  height: 6em;
   object-fit: contain;
   @media only screen and (max-width: 767px) {
     width: 40%;

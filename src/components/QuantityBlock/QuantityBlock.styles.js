@@ -1,5 +1,20 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: calc(100% - 1em);
+`;
+
+export const Subtitle = styled.p`
+  color: ${(props) => props.theme.primary.background};
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 0.7em;
+  margin: 0.5em 0 0.8em 0;
+  span {
+    font-weight: bold;
+  }
+`;
+
 export const QuantityWrapper = styled.div`
   margin-right: 1em;
   margin-top: 0.5em;
