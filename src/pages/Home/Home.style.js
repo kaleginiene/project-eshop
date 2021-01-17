@@ -6,6 +6,7 @@ export const Main = styled.main`
   max-width: 100%;
   min-height: 65vh;
   display: flex;
+  align-items: flex-start;
   @media only screen and (max-width: 767px) {
     display: block;
   }
@@ -17,8 +18,8 @@ export const Main = styled.main`
 
 export const FlexBlock = styled.section`
   display: flex;
-  width: 75%;
   flex-wrap: wrap;
+  width: 75%;
   @media only screen and (max-width: 767px) {
     display: ${(props) => (props.display === "false" ? "block" : "none")};
     width: 100%;
@@ -32,7 +33,8 @@ export const FlexBlock = styled.section`
 `;
 
 export const CartBlock = styled.section`
-  margin: 0 0 0.5em 0.5em;
+  margin: 0.5em;
+  margin-right: 0;
   padding-top: 1em;
   width: calc(25% - 0.5em);
   max-width: 100%;
@@ -76,7 +78,7 @@ export const Block = styled.div`
   background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   text-align: center;
   Button {
@@ -89,11 +91,19 @@ export const Block = styled.div`
     margin-right: 0.5em;
   }
 `;
+
+export const Icon = styled.img`
+  width: 0.9em;
+  object-fit: contain;
+  margin-left: 0.5em;
+`;
+
 export const Price = styled.div`
   width: 20%;
-  text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
   span {
     font-weight: bold;
+    color: #555;
+    font-size: 1em;
   }
 `;

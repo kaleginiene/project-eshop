@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Block = styled.div`
-  margin: 0em 0.5em 0.5em 0.5em;
+  margin: 0.5em;
   padding: 0.5em;
   display: flex;
   flex-direction: column;

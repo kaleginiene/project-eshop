@@ -4,6 +4,7 @@ import { DisplayContext } from "../../contexts/display.context";
 import { ProductCard, CartProduct, Button } from "../../components";
 import * as S from "./Home.style";
 import products from "../../utils/products";
+import InfoIcon from "../../assets/icons/info.svg";
 
 function priceSum(cart) {
   if (cart && cart !== undefined) {
@@ -34,7 +35,10 @@ function Home() {
           <S.Block>
             <Button>Pirkti</Button>
             <S.Price>
-              Kaina <span>&euro; {priceSum(cartProducts).toFixed(2)}</span>
+              <S.Block>
+                Kaina <S.Icon src={InfoIcon} alt="Daugiau informacijos" />
+              </S.Block>
+              <span>&euro; {priceSum(cartProducts).toFixed(2)}</span>
             </S.Price>
           </S.Block>
           <S.Wrapper className="back-btn">

@@ -1,16 +1,16 @@
 const theme = {
   primary: {
-    background: "#E22E39",
+    background: "#E22E39", //red
     hover: {
-      background: "#B22F2E",
+      background: "#B22F2E", //darker-red
     },
     focus: {
-      background: "#111111",
+      background: "#111111", //black
     },
-    border: "1px solid #eaeaeb",
+    border: "1px solid #eaeaeb", //grey border
   },
   secondary: {
-    background: "#F6F6F8",
+    background: "#F6F6F8", //light grey
   },
 };
 

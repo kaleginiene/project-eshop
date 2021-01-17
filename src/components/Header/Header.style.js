@@ -38,10 +38,22 @@ export const Cart = styled.div`
   align-items: center;
   font-weight: bold;
   position: relative;
-  color: #222;
+  color: #555;
+
   img {
     width: 1.5em;
     margin-right: 0.5em;
+  }
+  .desktop {
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+    @media only screen and (max-width: 1024px) {
+      display: block;
+    }
   }
 `;
 
@@ -61,4 +73,7 @@ export const Quantity = styled.div`
   color: #fff;
   font-size: 0.8em;
   font-weight: normal;
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
