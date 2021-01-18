@@ -10,11 +10,11 @@ function Header({ cart, quantity, handleClick }) {
     <S.Header>
       <S.Wrapper>
         <Link to="/">
-          <S.Logo src={logoImg} alt="Logo" />
+          <S.Logo src={logoImg} alt="Barbora" />
         </Link>
         <S.Cart onClick={handleClick}>
-          <img src={CartIcon} alt="Shopping Cart" className="desktop" />
-          <img src={CartBasket} alt="Shopping Basket" className="mobile" />{" "}
+          <S.CartIcon src={CartIcon} alt="Shopping Cart" />
+          <S.BasketIcon src={CartBasket} alt="Shopping Basket" />
           &euro;
           {cart.toFixed(2)}
           {quantity > 0 && <S.Quantity>{quantity}</S.Quantity>}

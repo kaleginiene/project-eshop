@@ -7,9 +7,11 @@ export const Main = styled.main`
   min-height: 65vh;
   display: flex;
   align-items: flex-start;
+
   @media only screen and (max-width: 767px) {
     display: block;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
@@ -20,10 +22,12 @@ export const FlexBlock = styled.section`
   display: flex;
   flex-wrap: wrap;
   width: 75%;
+
   @media only screen and (max-width: 767px) {
     display: ${(props) => (props.display === "false" ? "block" : "none")};
     width: 100%;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     display: ${(props) => (props.display === "false" ? "flex" : "none")};
     flex-wrap: wrap;
@@ -54,6 +58,7 @@ export const CartBlock = styled.section`
     min-height: 90vh;
     display: ${(props) => (props.display === "true" ? "flex" : "none")};
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     width: 80%;
     margin: 0 auto;
@@ -61,9 +66,11 @@ export const CartBlock = styled.section`
     display: ${(props) => (props.display === "true" ? "flex" : "none")};
   }
 `;
+
 export const Wrapper = styled.div`
   padding: 0.5em;
   max-width: 100%;
+
   .back-btn {
     Button {
       @media only screen and (min-width: 1024px) {
@@ -87,6 +94,7 @@ export const Block = styled.div`
     border-radius: 0.5em;
     width: calc(80% - 1em);
   }
+
   @media only screen and (max-width: 1024px) {
     width: 100%;
     margin-right: 0.5em;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: calc(100% - 1em);
+  margin: 0 auto;
 `;
 
 export const Subtitle = styled.p`
@@ -10,6 +11,7 @@ export const Subtitle = styled.p`
   text-align: center;
   line-height: 0.7em;
   margin: 0.5em 0 0.8em 0;
+
   span {
     font-weight: bold;
   }
@@ -25,21 +27,25 @@ export const QuantityWrapper = styled.div`
   border-radius: 1.5em;
   border: ${(props) => props.theme.primary.border};
   display: flex;
+
   Button {
     width: 25%;
     padding: 0.25em;
     font-size: 1.3em;
     font-weight: bold;
     background: transparent;
+
     :first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
+
     :last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
   }
+
   Button:hover {
     background-color: ${(props) => props.theme.secondary.background};
   }

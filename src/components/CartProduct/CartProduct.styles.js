@@ -13,6 +13,7 @@ export const FlexBlock = styled.div`
   border-radius: 0.5em;
   background-color: #fff;
   box-sizing: border-box;
+
   &&.centered {
     justify-content: center;
     background-color: transparent;

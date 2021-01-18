@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Block = styled.div`
   margin: 0.5em;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 1em 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,20 +12,26 @@ export const Block = styled.div`
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;
+
   &:nth-child(5) {
     margin-left: 0;
+
     @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
     }
+
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       margin: 0.5em;
     }
   }
+
   &:nth-child(4n + 1) {
     margin-left: 0;
+
     @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
     }
+
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       margin: 0.5em;
     }
@@ -33,15 +39,18 @@ export const Block = styled.div`
 
   &:first-child {
     margin-left: 0;
+
     @media only screen and (max-width: 767px) {
       margin-left: 0.5em;
       margin-top: 6em;
     }
+
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       margin: 0.5em;
       margin-top: 6em;
     }
   }
+
   button {
     min-height: 2em;
     width: calc(100% - 1em);
@@ -50,6 +59,7 @@ export const Block = styled.div`
       background-color: #c21b25;
     }
   }
+
   @media only screen and (max-width: 767px) {
     width: calc(100% - 1em);
     flex-direction: row;
@@ -60,6 +70,7 @@ export const Block = styled.div`
     margin: 0 0.5em;
     position: relative;
   }
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     width: calc(50% - 1em);
     margin: 0.5em;
@@ -78,10 +89,12 @@ export const FlexBlock = styled.div`
 
 export const Icon = styled.img`
   margin: 0 0.5em 0.5em 0;
+
   :last-child {
     margin-right: 0;
   }
   width: 1.5em;
+
   @media only screen and (max-width: 767px) {
     position: absolute;
     right: 0.5em;
@@ -98,15 +111,19 @@ export const Image = styled.img`
   width: 100%;
   height: 6em;
   object-fit: contain;
+
   @media only screen and (max-width: 767px) {
     width: 40%;
   }
+
   @media only screen and (max-width: 767px) {
     height: 5em;
   }
 `;
+
 export const Title = styled.div`
   margin-top: 0.5em;
+
   @media only screen and (max-width: 767px) {
     width: 60%;
   }
@@ -117,6 +134,7 @@ export const Price = styled.div`
   color: ${(props) => props.theme.primary.background};
   font-weight: bold;
   font-size: 1.5em;
+
   @media only screen and (max-width: 767px) {
     width: 40%;
   }

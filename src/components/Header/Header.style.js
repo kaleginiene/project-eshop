@@ -5,6 +5,7 @@ export const Header = styled.header`
   padding: 0.5em 1em;
   border-bottom: ${(props) => props.theme.primary.border};
   background-color: #fff;
+
   @media only screen and (max-width: 1024px) {
     position: fixed;
     max-width: calc(100% - 2em);
@@ -12,6 +13,7 @@ export const Header = styled.header`
     z-index: 9;
   }
 `;
+
 export const Wrapper = styled.div`
   width: 83em;
   max-width: 100%;
@@ -26,8 +28,6 @@ export const Logo = styled.img`
   width: 10em;
 `;
 
-export const Actions = styled.nav``;
-
 export const Cart = styled.div`
   min-height: 2.5em;
   border: 1px solid #a9a9a9;
@@ -39,21 +39,24 @@ export const Cart = styled.div`
   font-weight: bold;
   position: relative;
   color: #555;
+`;
 
-  img {
+export const CartIcon = styled.img`
+  width: 1.5em;
+  margin-right: 0.5em;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const BasketIcon = styled.img`
+  display: none;
+
+  @media only screen and (max-width: 1024px) {
+    display: block;
     width: 1.5em;
     margin-right: 0.5em;
-  }
-  .desktop {
-    @media only screen and (max-width: 1024px) {
-      display: none;
-    }
-  }
-  .mobile {
-    display: none;
-    @media only screen and (max-width: 1024px) {
-      display: block;
-    }
   }
 `;
 
@@ -73,6 +76,7 @@ export const Quantity = styled.div`
   color: #fff;
   font-size: 0.8em;
   font-weight: normal;
+
   @media only screen and (max-width: 1024px) {
     display: none;
   }
