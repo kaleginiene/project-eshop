@@ -1,17 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## This is a simple E-shop project template where:
+## This is a simple E-shop project template which was created for demo purposes. In this project:
 
-:purse: you are able to add a product into your cart;
-:heavy_plus_sign: change quantity of the products in your cart;
-:heavy_minus_sign: decrease or delete products from the cart;
-:iphone: website is fully responsive.
+:purse: you are able to add a product into your cart;<br />
+:heavy_plus_sign: change quantity of the products in your cart;<br />
+:heavy_minus_sign: decrease or delete products from the cart;<br />
+:iphone: website is fully responsive.<br />
 
 ## For this project I've used:
 
-:anchor: React Hooks such as: useState and Context;
-:high_heel: styled-components module for components styling;
-:pencil: Storybook for UI components;
+:anchor: React Hooks such as: useState and Context;<br />
+:high_heel: styled-components module for components styling;<br />
+:pencil: Storybook for UI components;<br />
 
 ## Available Scripts
 
